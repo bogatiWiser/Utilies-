@@ -12,3 +12,15 @@ npx: installed 1 in 1.76s
     npm: 6.14.14 - /usr/local/bin/npm
   npmPackages:
     jest: ^26.6.3 => 26.6.3 
+
+3 How to change the annnnnnoying pyhton default version 
+$ which python3
+/usr/local/bin/python3
+
+vi ~/.bash_profile  
+alias python='/usr/local/bin/python3'
+
+source ~/.bash_profile
+
+$ python --version
+Python 3.9.7
