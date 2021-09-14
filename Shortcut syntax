@@ -24,3 +24,41 @@ source ~/.bash_profile
 
 $ python --version
 Python 3.9.7
+***************************DO NOT FALL FOR ABOVE COMMAND*********************************
+Do right thing, do thing right!
+
+--->Zero Open your terminal,
+
+--Firstly input python -V, It likely shows:
+
+Python 2.7.10
+-Secondly input python3 -V, It likely shows:
+
+Python 3.7.2
+--Thirdly input where  python or which python, It likely shows:
+
+/usr/bin/python
+---Fourthly input where python3 or which python3, It likely shows:
+
+/usr/local/bin/python3
+--Fifthly add the following line at the bottom of your PATH environment variable file in ~/.profile file or ~/.bash_profile under Bash or ~/.zshrc under zsh.
+
+alias python='/usr/local/bin/python3'
+OR
+
+alias python=python3
+-Sixthly input source ~/.bash_profile under Bash or source ~/.zshrc under zsh.
+
+--Seventhly Quit the terminal.
+
+---Eighthly Open your terminal, and input python -V, It likely shows:
+
+Python 3.7.2
+I had done successfully try it.
+
+Others, the ~/.bash_profile under zsh is not that ~/.bash_profile.
+
+The PATH environment variable under zsh instead ~/.profile (or ~/.bash_file) via ~/.zshrc.
+
+Help you guys!
+https://stackoverflow.com/questions/5846167/how-to-change-default-python-version
