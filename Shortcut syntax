@@ -12,6 +12,11 @@ npx: installed 1 in 1.76s
     npm: 6.14.14 - /usr/local/bin/npm
   npmPackages:
     jest: ^26.6.3 => 26.6.3 
+ ------------------------------
+ How to check what application is running in specific port ?
+ bimalabogati@L-C02YTBFULVCF ~ % lsof -nP -iTCP -sTCP:LISTEN | grep 8001
+RedisInsi 21205 bimalabogati   15u  IPv4 0x894fc4c71cc3cf57      0t0  TCP 127.0.0.1:8001 (LISTEN)
+RedisInsi 21205 bimalabogati   19u  IPv6 0x894fc4c71ff7c8cf      0t0  TCP [::1]:8001 (LISTEN)
 
 3 How to change the annnnnnoying pyhton default version 
 $ which python3
